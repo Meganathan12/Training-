@@ -1,0 +1,11 @@
+class FinallyExample {
+    public static void main(String[] args) {
+        try {
+            int x = 5 / 1;
+        } catch (Exception e) {
+            System.out.println("Error");
+        } finally {
+            System.out.println("Always executed");
+        }
+    }
+}
