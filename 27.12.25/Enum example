@@ -1,0 +1,10 @@
+enum Day {
+    MON, TUE, WED
+}
+
+class EnumExample {
+    public static void main(String[] args) {
+        Day d = Day.MON;
+        System.out.println(d);
+    }
+}
