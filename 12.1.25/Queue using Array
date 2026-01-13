@@ -1,0 +1,19 @@
+class QueueArray {
+    int front = 0, rear = 0;
+    int[] q = new int[5];
+
+    void add(int x) {
+        q[rear++] = x;
+    }
+
+    void remove() {
+        System.out.println(q[front++]);
+    }
+
+    public static void main(String[] args) {
+        QueueArray q = new QueueArray();
+        q.add(1);
+        q.add(2);
+        q.remove();
+    }
+}
