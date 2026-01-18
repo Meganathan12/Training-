@@ -1,0 +1,15 @@
+class Pangram {
+    public static void main(String[] args) {
+        String s = "abcdefghijklmnopqrstuvwxyz";
+        boolean isPangram = true;
+
+        for (char c = 'a'; c <= 'z'; c++) {
+            if (!s.contains("" + c)) {
+                isPangram = false;
+                break;
+            }
+        }
+
+        System.out.println(isPangram);
+    }
+}
